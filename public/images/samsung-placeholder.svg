@@ -1,0 +1,93 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141124" />
+      <stop offset="50%" stop-color="#0c0a17" />
+      <stop offset="100%" stop-color="#07060d" />
+    </linearGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="phoneBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7c3aed" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#4c1d95" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1433" />
+      <stop offset="100%" stop-color="#0b081a" />
+    </linearGradient>
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b2d6a" />
+      <stop offset="100%" stop-color="#15102a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" />
+  <circle cx="400" cy="420" r="340" fill="url(#violetGlow)" />
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="600" x2="800" y2="600" />
+    <line x1="0" y1="800" x2="800" y2="800" />
+    <line x1="200" y1="0" x2="200" y2="1000" />
+    <line x1="400" y1="0" x2="400" y2="1000" />
+    <line x1="600" y1="0" x2="600" y2="1000" />
+  </g>
+
+  <!-- Stylized Modern Smartphone Silhouette (Ultra Form Factor) -->
+  <g transform="translate(230, 180)">
+    <!-- Shadow -->
+    <rect x="15" y="25" width="310" height="520" rx="28" fill="#000000" opacity="0.6" filter="blur(20px)" />
+    
+    <!-- Phone Body Outer Frame -->
+    <rect x="0" y="0" width="340" height="540" rx="26" fill="url(#screenGrad)" stroke="url(#phoneBorder)" stroke-width="2.5" />
+    
+    <!-- Inner Screen Bezel -->
+    <rect x="8" y="8" width="324" height="524" rx="20" fill="#0d091e" opacity="0.9" />
+
+    <!-- Camera Punch Hole -->
+    <circle cx="170" cy="36" r="6" fill="#080612" stroke="#a78bfa" stroke-opacity="0.4" stroke-width="1.5" />
+
+    <!-- Isometric / Camera Cluster Silhouette on Screen or Rear Accent -->
+    <g transform="translate(30, 70)" opacity="0.4">
+      <circle cx="40" cy="35" r="22" fill="url(#lensGrad)" stroke="#a78bfa" stroke-width="2" />
+      <circle cx="40" cy="35" r="10" fill="#090618" />
+      
+      <circle cx="40" cy="95" r="22" fill="url(#lensGrad)" stroke="#a78bfa" stroke-width="2" />
+      <circle cx="40" cy="95" r="10" fill="#090618" />
+
+      <circle cx="40" cy="155" r="22" fill="url(#lensGrad)" stroke="#a78bfa" stroke-width="2" />
+      <circle cx="40" cy="155" r="10" fill="#090618" />
+
+      <circle cx="105" cy="65" r="14" fill="url(#lensGrad)" stroke="#a78bfa" stroke-width="1.5" />
+      <circle cx="105" cy="125" r="14" fill="url(#lensGrad)" stroke="#a78bfa" stroke-width="1.5" />
+    </g>
+
+    <!-- 3D Visualization Grid lines across screen -->
+    <path d="M 40 330 Q 170 280 300 330" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.4" />
+    <path d="M 40 370 Q 170 320 300 370" stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.6" />
+    <path d="M 40 410 Q 170 360 300 410" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.4" />
+    
+    <!-- Ultra Badge -->
+    <rect x="70" y="445" width="200" height="36" rx="18" fill="#1e183a" stroke="#a78bfa" stroke-opacity="0.5" stroke-width="1" />
+    <text x="170" y="468" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#c4b5fd" letter-spacing="3" text-anchor="middle">S26 ULTRA 3D</text>
+  </g>
+
+  <!-- Typography / Info below -->
+  <g transform="translate(400, 800)" text-anchor="middle">
+    <!-- Verified Badge Container -->
+    <rect x="-140" y="-30" width="280" height="34" rx="17" fill="#7c3aed" fill-opacity="0.15" stroke="#a78bfa" stroke-opacity="0.3" stroke-width="1" />
+    <text x="0" y="-8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ddd6fe" letter-spacing="2">3D MODELING &amp; VISUALIZATION</text>
+
+    <!-- Main Title -->
+    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="0.5">Samsung Galaxy S26 Ultra</text>
+    
+    <!-- Status note -->
+    <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#9ca3af" letter-spacing="1">Preview Placeholder • Behance Project Verified</text>
+  </g>
+</svg>

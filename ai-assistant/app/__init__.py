@@ -1,0 +1,1 @@
+"""Ahad Animates assistant service."""

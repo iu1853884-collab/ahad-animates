@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: ahad-animates-backend-test
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+
+jwt:
+  secret: dGhpcy1pcy1hLXRlc3Qtc2VjcmV0LWtleS13aXRoLWF0LWxlYXN0LTI1Ni1iaXRzLWZvci10ZXN0aW5nIQ==
+  expiration-ms: 3600000
+  cookie:
+    secure: false
+
+admin:
+  initial:
+    email: testadmin@ahadanimates.com
+    password: TestAdminSecurePassword123!
+    name: Test Admin
+
+cors:
+  allowed-origins: http://localhost:3000
