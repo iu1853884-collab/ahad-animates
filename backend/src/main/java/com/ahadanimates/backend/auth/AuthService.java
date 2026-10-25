@@ -80,7 +80,7 @@ public class AuthService {
                 .secure(cookieSecure)
                 .path("/")
                 .maxAge(Duration.ofMillis(expirationMs))
-                .sameSite("Lax")
+                .sameSite("None")
                 .build();
 
         AuthUserDto userDto = toDto(user);
@@ -95,7 +95,7 @@ public class AuthService {
                 .secure(cookieSecure)
                 .path("/")
                 .maxAge(0)
-                .sameSite("Lax")
+                .sameSite("None")
                 .build();
     }
 
